@@ -8,7 +8,8 @@
 // Usa a imagem embutida (original-data.js) quando disponível: imagens data: não
 // "contaminam" o canvas, então funciona até abrindo o index.html direto do disco.
 const ALVO_URL = window.ALVO_DATA || "original.jpeg";
-const LARGURA = 480;   // resolução de trabalho (pixels na horizontal)
+// resolução de trabalho (pixels na horizontal); menor no celular para ficar leve
+const LARGURA = Math.min(screen.width, screen.height) < 700 ? 360 : 480;
 const DURACAO = 12;    // segundos de animação
 
 const $ = (s) => document.querySelector(s);
