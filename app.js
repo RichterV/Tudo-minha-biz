@@ -273,3 +273,38 @@ for (const el of document.querySelectorAll(".psico")) {
 // convite e botão entram depois do texto
 $("#convite").style.setProperty("--i", indice);
 $("#enviar").style.setProperty("--i", indice + 3);
+
+// ---------- céu estrelado e rastro de brilhos ----------
+
+const ceu = $("#ceu");
+for (let k = 0; k < 140; k++) {
+  const e = document.createElement("span");
+  e.className = "estrela";
+  e.style.left = Math.random() * 100 + "%";
+  e.style.top = Math.random() * 100 + "%";
+  e.style.setProperty("--t", (Math.random() < 0.85 ? 1 + Math.random() * 1.5 : 2.5 + Math.random() * 1.5) + "px");
+  e.style.setProperty("--d", 1.5 + Math.random() * 3 + "s");
+  e.style.setProperty("--a", -Math.random() * 5 + "s");
+  ceu.append(e);
+}
+
+const SIMBOLOS = ["✦", "✧", "⋆", "·", "✶"];
+const CORES = ["#f5d27a", "#cdb4ff", "#ffb3e6", "#ffffff"];
+let ultimaFaisca = 0;
+if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  addEventListener("pointermove", (e) => {
+    const agora = performance.now();
+    if (agora - ultimaFaisca < 35) return;
+    ultimaFaisca = agora;
+    const f = document.createElement("span");
+    f.className = "faisca";
+    f.textContent = SIMBOLOS[(Math.random() * SIMBOLOS.length) | 0];
+    f.style.left = e.clientX + "px";
+    f.style.top = e.clientY + "px";
+    f.style.setProperty("--cor", CORES[(Math.random() * CORES.length) | 0]);
+    f.style.setProperty("--t", 10 + Math.random() * 12 + "px");
+    f.style.setProperty("--dx", (Math.random() * 2 - 1) * 24 + "px");
+    f.addEventListener("animationend", () => f.remove());
+    document.body.append(f);
+  });
+}

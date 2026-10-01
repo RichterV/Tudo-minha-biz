@@ -5,19 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tudo é minha biz</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@600&family=Cormorant+Garamond:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="nebulosa" aria-hidden="true"></div>
+  <div id="ceu" class="ceu" aria-hidden="true"></div>
   <input id="arquivo" type="file" accept="image/*" hidden>
 
   <main class="palco">
     <canvas id="tela"></canvas>
 
     <section id="intro" class="intro">
+      <div class="oraculo" aria-hidden="true">
+        <div class="bola"></div>
+        <div class="zodiaco">
+          <span style="--k:0">♈︎</span><span style="--k:1">♉︎</span><span style="--k:2">♊︎</span>
+          <span style="--k:3">♋︎</span><span style="--k:4">♌︎</span><span style="--k:5">♍︎</span>
+          <span style="--k:6">♎︎</span><span style="--k:7">♏︎</span><span style="--k:8">♐︎</span>
+          <span style="--k:9">♑︎</span><span style="--k:10">♒︎</span><span style="--k:11">♓︎</span>
+        </div>
+      </div>
+
       <div class="intro-texto">
         <h1 class="psico">Tudo é minha biz</h1>
-        <p class="psico">Se tudo no universo não passa de poeira das estrelas, você na verdade sou eu. Qualquer momento capturado pela sua camera na verdade não passa de eu mesmo sentado na minha biz. Você é eu e minha biz. Tudo é minha biz.</p>
+        <p class="ornamento" style="--i:5" aria-hidden="true">☾ &nbsp;✧&nbsp; ⋆ &nbsp;✦&nbsp; ⋆ &nbsp;✧&nbsp; ☽</p>
+        <p class="psico">Se tudo no universo não passa de poeira das estrelas, você na verdade sou eu. Qualquer momento capturado pela sua câmera na verdade não passa de eu mesmo sentado na minha biz. Você é eu e minha biz. Tudo é minha biz.</p>
         <p id="convite" class="convite">Faça upload de uma foto sua para obter a prova matemática.</p>
         <label for="arquivo" id="enviar" class="enviar">Subir foto</label>
       </div>
@@ -31,6 +46,7 @@
   </div>
 
   <p class="nota">*Eu não estou drogado, só estou estudando transporte ótimo.</p>
+  <p class="contador" aria-hidden="true">✧ Você é o visitante <b>não sei</b> ✧</p>
 
   <script src="original-data.js"></script>
   <script src="app.js"></script>
