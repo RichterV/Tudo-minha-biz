@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tudo é minha biz</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="nebulosa" aria-hidden="true"></div>
+  <input id="arquivo" type="file" accept="image/*" hidden>
+
+  <main class="palco">
+    <canvas id="tela"></canvas>
+
+    <section id="intro" class="intro">
+      <div class="intro-texto">
+        <h1 class="psico">Tudo é minha biz</h1>
+        <p class="psico">Se tudo no universo não passa de poeira das estrelas, você na verdade sou eu. Qualquer momento capturado pela sua camera na verdade não passa de eu mesmo sentado na minha biz. Você é eu e minha biz. Tudo é minha biz.</p>
+        <p id="convite" class="convite">Faça upload de uma foto sua para obter a prova matemática.</p>
+        <label for="arquivo" id="enviar" class="enviar">Subir foto</label>
+      </div>
+    </section>
+  </main>
+
+  <div class="rodape">
+    <div id="status" class="status"></div>
+    <progress id="progresso" max="1" value="0" hidden></progress>
+    <label for="arquivo" id="outra" class="enviar mini" hidden>Subir outra foto</label>
+  </div>
+
+  <p class="nota">*Eu não estou drogado, só estou estudando transporte ótimo.</p>
+
+  <script src="original-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

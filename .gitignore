@@ -1,0 +1,27 @@
+# O site (GitHub Pages) precisa só de:
+#   index.html, style.css, app.js, original-data.js, favicon.svg e README.md
+
+# Fotos de teste e resultados gerados localmente
+imagens_teste/
+resultados/
+
+# Imagem original: já está embutida em original-data.js
+original.jpeg
+
+# Script Python usado só para experimentos locais
+reorganizar.py
+__pycache__/
+*.py[cod]
+.venv/
+
+# Arquivos temporários de debug
+dbg.html
+
+# Sistema / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*~
