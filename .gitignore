@@ -1,8 +1,9 @@
 # O site (GitHub Pages) precisa só de:
-#   index.html, style.css, app.js, original-data.js, favicon.svg, og-image.jpg e README.md
+#   index.html, style.css, app.js, original-data.js, favicon.svg, og-image.jpg, video_transformacao.mp4 e README.md
 
 # Fotos de teste e resultados gerados localmente
 imagens_teste/
+imagens_video/
 resultados/
 
 # Imagem original: já está embutida em original-data.js
