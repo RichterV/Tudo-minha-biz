@@ -4,4 +4,4 @@ Se tudo no universo não passa de poeira das estrelas, você na verdade sou eu. 
 
 **Descubra:** https://richterv.github.io/Tudo-minha-biz/
 
-<sub>*Eu não estou drogado, só estou estudando transporte ótimo.</sub>
+<sub>*Eu não estou drogado, só estou estudando transporte ótimo discreto.</sub>
