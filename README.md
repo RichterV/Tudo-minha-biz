@@ -4,7 +4,7 @@ Se tudo no universo não passa de poeira das estrelas, você na verdade sou eu. 
 
 **Descubra:** https://richterv.github.io/Tudo-minha-biz/
 
-<img src="transformacao.gif" alt="Imagens tendo os pixels reorganizados até virar a foto original" width="480">
+<img src="transformacao.gif" alt="Imagens tendo os pixels reorganizados até virar a foto original" width="320">
 
 <sub>[versão em vídeo (mp4)](video_transformacao.mp4)</sub>
 
